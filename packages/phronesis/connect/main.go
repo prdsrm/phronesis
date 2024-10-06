@@ -85,14 +85,6 @@ func listen(ctx context.Context, client *telegram.Client, dispatcher tg.UpdateDi
 	return nil
 }
 
-type ConnectToBotRequest struct {
-	UserID int64 `json:"user_id"`
-}
-
-type ConnectToBotOutput struct {
-	Message string `json:"message"`
-}
-
 // Request takes in the user ID.
 type Request struct {
 	// User ID of the telegram account you want to connect to.
