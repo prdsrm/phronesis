@@ -5,6 +5,12 @@ go 1.22.4
 toolchain go1.22.8
 
 require (
+	github.com/gotd/td v0.110.1
+	github.com/jmoiron/sqlx v1.4.0
+	github.com/prdsrm/std v0.0.0-20241006133147-27e1a06c5ece
+)
+
+require (
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/go-faster/errors v0.7.1 // indirect
 	github.com/go-faster/jx v1.1.0 // indirect
@@ -13,14 +19,11 @@ require (
 	github.com/gotd/contrib v0.20.0 // indirect
 	github.com/gotd/ige v0.2.2 // indirect
 	github.com/gotd/neo v0.1.5 // indirect
-	github.com/gotd/td v0.110.1 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/jmoiron/sqlx v1.4.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/lib/pq v1.10.9 // indirect
 	github.com/mattn/go-sqlite3 v1.14.23 // indirect
-	github.com/prdsrm/std v0.0.0-20241005193636-7644ccf5270e // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
 	go.opentelemetry.io/otel v1.29.0 // indirect
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect
