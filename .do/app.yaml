@@ -1,0 +1,6 @@
+name: phronesis
+services:
+- name: web
+  github:
+    repo: prdsrm/phronesis
+    branch: main
