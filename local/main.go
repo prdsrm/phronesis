@@ -102,6 +102,7 @@ func handleConnect(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
+	log.Println("Got request to connect to: ", req.UserID)
 	bot, err := postgres.GetBotByUserID(db, req.UserID)
 	if err != nil {
 		log.Fatalln("can't get bot: ", err)
@@ -123,6 +124,7 @@ func main() {
 	db = conn
 
 	http.HandleFunc("/connect", handleConnect)
+	log.Println("Listening on port :80")
 	err = http.ListenAndServe(":80", nil)
 	if err != nil {
 		log.Fatalln("can't connect to bot: ", err)
