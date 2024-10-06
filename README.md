@@ -1,11 +1,12 @@
-## ROADMAP
+## Usage as a cloud function
 
-Rewrite the service to connect to one of the Telegram account in my database
-as a really simple cloud function, on DO.
-It will be really simple to setup.
-I can make it open-source without problem.
+Deploy this cloud function:
+- Follow <https://docs.digitalocean.com/products/functions/how-to/create-functions/> carefully
+- `cd ..`
+- `doctl serverless deploy phronesis`
 
-## Quick testing
+## Quick testing, deploy locally
 
-connect:
+Run `cd local && go run`
+Connect:
 `curl http://localhost/connect -d '{"user_id": 0}`
